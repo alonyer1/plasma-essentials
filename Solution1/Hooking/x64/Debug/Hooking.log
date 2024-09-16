@@ -1,0 +1,25 @@
+﻿D:\0Softwares and Programs\Visual Studios Evil brother\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Hooking.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Hooking.cpp
+  Hooks.cpp
+  Generating Code...
+D:\0projects\plasma-essentials\Solution1\Hooking\ida-defs.h(113,9): warning C4005: 'LOBYTE': macro redefinition
+  (compiling source file 'Hooks.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(206,9):
+      see previous definition of 'LOBYTE'
+  
+D:\0projects\plasma-essentials\Solution1\Hooking\ida-defs.h(114,9): warning C4005: 'LOWORD': macro redefinition
+  (compiling source file 'Hooks.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(204,9):
+      see previous definition of 'LOWORD'
+  
+D:\0projects\plasma-essentials\Solution1\Hooking\ida-defs.h(116,9): warning C4005: 'HIBYTE': macro redefinition
+  (compiling source file 'Hooks.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(207,9):
+      see previous definition of 'HIBYTE'
+  
+D:\0projects\plasma-essentials\Solution1\Hooking\ida-defs.h(117,9): warning C4005: 'HIWORD': macro redefinition
+  (compiling source file 'Hooks.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(205,9):
+      see previous definition of 'HIWORD'
+  
+  Hooking.vcxproj -> D:\0projects\plasma-essentials\Solution1\x64\Debug\hooks.exe
