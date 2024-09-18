@@ -1,6 +1,6 @@
 # plasma-essentials
 Accumulated research and analysis of the beta build of Overwatch by Blizzard Entertainment.
-Credit to Cere4l, theo, Kiffy, and the rest of the plasmawatch discord.
+Credit to Cere4l, theo, fuzzbuck, Kiffy, and the rest of the plasmawatch discord.
 ## BUILD INSTRUCTIONS
 1. Open in Visual Studio
 2. Right click the solution and choose "build"
