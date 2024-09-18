@@ -15,15 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Hooking.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Hooks.cpp">
+    <ClCompile Include="TLS_hooks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Hooks.h">
+    <ClInclude Include="TLS_hooks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="definitions.h">

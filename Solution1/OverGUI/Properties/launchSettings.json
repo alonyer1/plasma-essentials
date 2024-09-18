@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "OverGUI": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\0projects\\ExamProjs\\Debug",
+      "nativeDebugging": true
+    }
+  }
+}

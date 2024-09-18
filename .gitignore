@@ -26,7 +26,11 @@
 *.a
 *.lib
 
+#.vs
+*/.vs/
+
 # Executables
 *.exe
 *.out
 *.app
+/plasma-essentials.zip

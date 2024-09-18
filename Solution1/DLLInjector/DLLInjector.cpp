@@ -27,11 +27,11 @@ int main(int argc, char** argv)
         return 1;
     }
 
-    LPSTR lpCmdLine = (LPSTR)argv[1];
+    LPCSTR lpCmdLine = (LPCSTR)argv[1];
     DLL_PATH = (LPSTR)argv[2];
 
     printf("opening process %s\n", lpCmdLine);
-    if (CreateProcess(lpCmdLine, NULL, NULL, NULL, NULL, CREATE_SUSPENDED, NULL, NULL, &Startup, &pi) == FALSE) {
+    if (CreateProcessA(lpCmdLine, NULL, NULL, NULL, NULL, CREATE_SUSPENDED, NULL, NULL, &Startup, &pi) == FALSE) {
         printf("couldnt open process %s\n", lpCmdLine);
         return 1;
     }
@@ -61,7 +61,7 @@ BOOL dllInjector(const char* dllpath, DWORD pID)
     }
 
 
-    remoteLoadLib = (LPVOID)GetProcAddress(GetModuleHandle(L"kernel32.dll"), "LoadLibrary");
+    remoteLoadLib = (LPVOID)GetProcAddress(GetModuleHandle(L"kernel32.dll"), "LoadLibraryW");
 
     remoteString = (LPVOID)VirtualAllocEx(pHandle, NULL, strlen(DLL_PATH) + 1, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
     WriteProcessMemory(pHandle, (LPVOID)remoteString, dllpath, strlen(dllpath), NULL);

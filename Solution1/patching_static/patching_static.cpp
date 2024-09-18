@@ -2,10 +2,8 @@
 //
 
 #include <iostream>
-#include "insn.h"
 #include <Windows.h>
 
-typedef PlasmaInstruction _insn;
 /*
 bool tryDeobfuscate(_insn insn, DWORD_PTR current_addr) {
     if (std::string(insn->mnemonic) == "push") {
@@ -43,12 +41,12 @@ bool tryDeobfuscate(_insn insn, DWORD_PTR current_addr) {
         }
     }
     return false;
-}
+}*/
 int main()
 {
     std::cout << "Hello World!\n";
 }
-*/
+
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 

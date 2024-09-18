@@ -3,60 +3,76 @@
   "WorkspaceRootPath": "D:\\0projects\\plasma-essentials\\Solution1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{05D94454-FC42-4E28-8DC1-1B0788114CAE}|Hooking\\Hooking.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\ida-defs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{05D94454-FC42-4E28-8DC1-1B0788114CAE}|Hooking\\Hooking.vcxproj|solutionrelative:Hooking\\ida-defs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{295DFF31-9690-49C5-B3D5-692E6DE4D1CF}|patching_static\\patching_static.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\patching_static\\patching_static.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{295DFF31-9690-49C5-B3D5-692E6DE4D1CF}|patching_static\\patching_static.vcxproj|solutionrelative:patching_static\\patching_static.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05D94454-FC42-4E28-8DC1-1B0788114CAE}|Hooking\\Hooking.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\Hooks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{05D94454-FC42-4E28-8DC1-1B0788114CAE}|Hooking\\Hooking.vcxproj|solutionrelative:Hooking\\Hooks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D94454-FC42-4E28-8DC1-1B0788114CAE}|Hooking\\Hooking.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\Hooking.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{05D94454-FC42-4E28-8DC1-1B0788114CAE}|Hooking\\Hooking.vcxproj|solutionrelative:Hooking\\Hooking.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF208D14-5F2A-44FD-A07C-9A651641D3A2}|DLLInjector\\DLLInjector.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\DLLInjector\\DLLInjector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BF208D14-5F2A-44FD-A07C-9A651641D3A2}|DLLInjector\\DLLInjector.vcxproj|solutionrelative:DLLInjector\\DLLInjector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F142A341-5EE0-442D-A15F-98AE9B48DBAE}|dependencies\\minhook\\build\\VC17\\libMinHook.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\minhook\\include\\MinHook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F142A341-5EE0-442D-A15F-98AE9B48DBAE}|dependencies\\minhook\\build\\VC17\\libMinHook.vcxproj|solutionrelative:dependencies\\minhook\\include\\MinHook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\setup.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|solutionrelative:fuzzbuck\\betawatch_hooker\\betawatch\\setup.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\hooks.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|solutionrelative:fuzzbuck\\betawatch_hooker\\betawatch\\hooks.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\hooks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|solutionrelative:fuzzbuck\\betawatch_hooker\\betawatch\\hooks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\setup.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|solutionrelative:fuzzbuck\\betawatch_hooker\\betawatch\\setup.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|solutionrelative:fuzzbuck\\betawatch_hooker\\betawatch\\framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|solutionrelative:fuzzbuck\\betawatch_hooker\\betawatch\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|solutionrelative:fuzzbuck\\betawatch_hooker\\betawatch\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D94454-FC42-4E28-8DC1-1B0788114CAE}|Hooking\\Hooking.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\TLS_hooks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{05D94454-FC42-4E28-8DC1-1B0788114CAE}|Hooking\\Hooking.vcxproj|solutionrelative:Hooking\\TLS_hooks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D94454-FC42-4E28-8DC1-1B0788114CAE}|Hooking\\Hooking.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\TLS_hooks.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{05D94454-FC42-4E28-8DC1-1B0788114CAE}|Hooking\\Hooking.vcxproj|solutionrelative:Hooking\\TLS_hooks.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D94454-FC42-4E28-8DC1-1B0788114CAE}|Hooking\\Hooking.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\definitions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{05D94454-FC42-4E28-8DC1-1B0788114CAE}|Hooking\\Hooking.vcxproj|solutionrelative:Hooking\\definitions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\setup.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|solutionrelative:fuzzbuck\\betawatch_hooker\\betawatch\\setup.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|solutionrelative:fuzzbuck\\betawatch_hooker\\betawatch\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{295DFF31-9690-49C5-B3D5-692E6DE4D1CF}|patching_static\\patching_static.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\patching_static\\insn.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{295DFF31-9690-49C5-B3D5-692E6DE4D1CF}|patching_static\\patching_static.vcxproj|solutionrelative:patching_static\\insn.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\setup.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|solutionrelative:fuzzbuck\\betawatch_hooker\\betawatch\\setup.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{295DFF31-9690-49C5-B3D5-692E6DE4D1CF}|patching_static\\patching_static.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\patching_static\\insn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{295DFF31-9690-49C5-B3D5-692E6DE4D1CF}|patching_static\\patching_static.vcxproj|solutionrelative:patching_static\\insn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{19D0C36C-CA70-4F35-B520-2DD6D0123CF0}|..\\..\\ExamProjs\\OverGUI\\OverGUI.csproj|d:\\0projects\\examprojs\\overgui\\overgui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF208D14-5F2A-44FD-A07C-9A651641D3A2}|DLLInjector\\DLLInjector.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\DLLInjector\\DLLInjector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BF208D14-5F2A-44FD-A07C-9A651641D3A2}|DLLInjector\\DLLInjector.vcxproj|solutionrelative:DLLInjector\\DLLInjector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.RuntimeIdentifierInference.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|solutionrelative:fuzzbuck\\betawatch_hooker\\betawatch\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}|fuzzbuck\\betawatch_hooker\\betawatch\\betawatch.vcxproj|solutionrelative:fuzzbuck\\betawatch_hooker\\betawatch\\framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F142A341-5EE0-442D-A15F-98AE9B48DBAE}|dependencies\\minhook\\build\\VC17\\libMinHook.vcxproj|D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\minhook\\include\\MinHook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F142A341-5EE0-442D-A15F-98AE9B48DBAE}|dependencies\\minhook\\build\\VC17\\libMinHook.vcxproj|solutionrelative:dependencies\\minhook\\include\\MinHook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\cccapstone\\cppbindings\\X86Disasm.hh||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -83,10 +99,13 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dependencies\\cccapstone\\cppbindings\\Disasm.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\libloaderapi.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\minwindef.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\minwindef.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\0Softwares and Programs\\Visual Studios Evil brother\\VC\\Tools\\MSVC\\14.41.34120\\include\\vadefs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\libloaderapi.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -96,28 +115,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "insn.h",
-              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\patching_static\\insn.h",
-              "RelativeDocumentMoniker": "patching_static\\insn.h",
-              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\patching_static\\insn.h",
-              "RelativeToolTip": "patching_static\\insn.h",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAswKsAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-14T07:50:58.658Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Bookmark",
@@ -129,91 +135,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Hooks.cpp",
-              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\Hooks.cpp",
-              "RelativeDocumentMoniker": "Hooking\\Hooks.cpp",
-              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\Hooks.cpp",
-              "RelativeToolTip": "Hooking\\Hooks.cpp",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "definitions.h",
+              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\definitions.h",
+              "RelativeDocumentMoniker": "Hooking\\definitions.h",
+              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\definitions.h",
+              "RelativeToolTip": "Hooking\\definitions.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-18T19:01:09.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ida-defs.h",
+              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\ida-defs.h",
+              "RelativeDocumentMoniker": "Hooking\\ida-defs.h",
+              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\ida-defs.h",
+              "RelativeToolTip": "Hooking\\ida-defs.h",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAUwHEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-18T19:01:05.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TLS_hooks.h",
+              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\TLS_hooks.h",
+              "RelativeDocumentMoniker": "Hooking\\TLS_hooks.h",
+              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\TLS_hooks.h",
+              "RelativeToolTip": "Hooking\\TLS_hooks.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-18T19:00:55.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TLS_hooks.cpp",
+              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\TLS_hooks.cpp",
+              "RelativeDocumentMoniker": "Hooking\\TLS_hooks.cpp",
+              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\TLS_hooks.cpp",
+              "RelativeToolTip": "Hooking\\TLS_hooks.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-16T04:38:15.791Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Hooking.cpp",
-              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\Hooking.cpp",
-              "RelativeDocumentMoniker": "Hooking\\Hooking.cpp",
-              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\Hooking\\Hooking.cpp",
-              "RelativeToolTip": "Hooking\\Hooking.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-16T04:38:14.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DLLInjector.cpp",
-              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\DLLInjector\\DLLInjector.cpp",
-              "RelativeDocumentMoniker": "DLLInjector\\DLLInjector.cpp",
-              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\DLLInjector\\DLLInjector.cpp",
-              "RelativeToolTip": "DLLInjector\\DLLInjector.cpp",
-              "ViewState": "AgIAACUAAAAAAAAAAAAMwD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-15T19:44:05.436Z"
+              "Title": "hooks.h",
+              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\hooks.h",
+              "RelativeDocumentMoniker": "fuzzbuck\\betawatch_hooker\\betawatch\\hooks.h",
+              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\hooks.h",
+              "RelativeToolTip": "fuzzbuck\\betawatch_hooker\\betawatch\\hooks.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-18T18:27:27.399Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MinHook.h",
-              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\minhook\\include\\MinHook.h",
-              "RelativeDocumentMoniker": "dependencies\\minhook\\include\\MinHook.h",
-              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\minhook\\include\\MinHook.h",
-              "RelativeToolTip": "dependencies\\minhook\\include\\MinHook.h",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAMwGQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-15T19:42:41.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "dllmain.cpp",
-              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\dllmain.cpp",
-              "RelativeDocumentMoniker": "fuzzbuck\\betawatch_hooker\\betawatch\\dllmain.cpp",
-              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\dllmain.cpp",
-              "RelativeToolTip": "fuzzbuck\\betawatch_hooker\\betawatch\\dllmain.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-15T19:40:16.255Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "framework.h",
-              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\framework.h",
-              "RelativeDocumentMoniker": "fuzzbuck\\betawatch_hooker\\betawatch\\framework.h",
-              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\framework.h",
-              "RelativeToolTip": "fuzzbuck\\betawatch_hooker\\betawatch\\framework.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-15T19:40:14.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "hooks.cpp",
-              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\hooks.cpp",
-              "RelativeDocumentMoniker": "fuzzbuck\\betawatch_hooker\\betawatch\\hooks.cpp",
-              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\hooks.cpp",
-              "RelativeToolTip": "fuzzbuck\\betawatch_hooker\\betawatch\\hooks.cpp",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAMwBEAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-15T19:40:12.801Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "pch.cpp",
               "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\pch.cpp",
               "RelativeDocumentMoniker": "fuzzbuck\\betawatch_hooker\\betawatch\\pch.cpp",
@@ -225,7 +208,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
+              "Title": "hooks.cpp",
+              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\hooks.cpp",
+              "RelativeDocumentMoniker": "fuzzbuck\\betawatch_hooker\\betawatch\\hooks.cpp",
+              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\hooks.cpp",
+              "RelativeToolTip": "fuzzbuck\\betawatch_hooker\\betawatch\\hooks.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-15T19:40:12.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "patching_static.cpp",
+              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\patching_static\\patching_static.cpp",
+              "RelativeDocumentMoniker": "patching_static\\patching_static.cpp",
+              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\patching_static\\patching_static.cpp",
+              "RelativeToolTip": "patching_static\\patching_static.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-13T20:54:47.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "vadefs.h",
+              "DocumentMoniker": "D:\\0Softwares and Programs\\Visual Studios Evil brother\\VC\\Tools\\MSVC\\14.41.34120\\include\\vadefs.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\0Softwares and Programs\\Visual Studios Evil brother\\VC\\Tools\\MSVC\\14.41.34120\\include\\vadefs.h",
+              "ToolTip": "D:\\0Softwares and Programs\\Visual Studios Evil brother\\VC\\Tools\\MSVC\\14.41.34120\\include\\vadefs.h",
+              "RelativeToolTip": "..\\..\\..\\0Softwares and Programs\\Visual Studios Evil brother\\VC\\Tools\\MSVC\\14.41.34120\\include\\vadefs.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-18T19:16:06.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "setup.cpp",
+              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\setup.cpp",
+              "RelativeDocumentMoniker": "fuzzbuck\\betawatch_hooker\\betawatch\\setup.cpp",
+              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\setup.cpp",
+              "RelativeToolTip": "fuzzbuck\\betawatch_hooker\\betawatch\\setup.cpp",
+              "ViewState": "AgIAADYAAAAAAAAAAAAuwEcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-14T06:45:47.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "pch.h",
               "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\pch.h",
               "RelativeDocumentMoniker": "fuzzbuck\\betawatch_hooker\\betawatch\\pch.h",
@@ -237,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "setup.h",
               "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\setup.h",
               "RelativeDocumentMoniker": "fuzzbuck\\betawatch_hooker\\betawatch\\setup.h",
@@ -249,7 +280,94 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OverGUI",
+              "DocumentMoniker": "D:\\0projects\\ExamProjs\\OverGUI\\OverGUI.csproj",
+              "RelativeDocumentMoniker": "..\\..\\ExamProjs\\OverGUI\\OverGUI.csproj",
+              "ToolTip": "D:\\0projects\\ExamProjs\\OverGUI\\OverGUI.csproj",
+              "RelativeToolTip": "..\\..\\ExamProjs\\OverGUI\\OverGUI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-18T18:33:02.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "libloaderapi.h",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\libloaderapi.h",
+              "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\libloaderapi.h",
+              "ViewState": "AgIAANsAAAAAAAAAAAAawPYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-15T19:48:56.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DLLInjector.cpp",
+              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\DLLInjector\\DLLInjector.cpp",
+              "RelativeDocumentMoniker": "DLLInjector\\DLLInjector.cpp",
+              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\DLLInjector\\DLLInjector.cpp",
+              "RelativeToolTip": "DLLInjector\\DLLInjector.cpp",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwCwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-15T19:44:05.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAABgBAAAAAAAAAAAMwBsBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-09-18T18:37:57.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Microsoft.NET.RuntimeIdentifierInference.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.RuntimeIdentifierInference.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.RuntimeIdentifierInference.targets",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAMwDwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-09-18T18:35:03.733Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "Microsoft.NET.TargetFrameworkInference.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAMwNYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-09-18T18:36:53.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "framework.h",
+              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\framework.h",
+              "RelativeDocumentMoniker": "fuzzbuck\\betawatch_hooker\\betawatch\\framework.h",
+              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\framework.h",
+              "RelativeToolTip": "fuzzbuck\\betawatch_hooker\\betawatch\\framework.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-15T19:40:14.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "dllmain.cpp",
+              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\dllmain.cpp",
+              "RelativeDocumentMoniker": "fuzzbuck\\betawatch_hooker\\betawatch\\dllmain.cpp",
+              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\dllmain.cpp",
+              "RelativeToolTip": "fuzzbuck\\betawatch_hooker\\betawatch\\dllmain.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-15T19:40:16.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "CsCapstoneHelper.hh",
               "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\cccapstone\\cppbindings\\CsCapstoneHelper.hh",
               "RelativeDocumentMoniker": "dependencies\\cccapstone\\cppbindings\\CsCapstoneHelper.hh",
@@ -261,20 +379,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "patching_static.cpp",
-              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\patching_static\\patching_static.cpp",
-              "RelativeDocumentMoniker": "patching_static\\patching_static.cpp",
-              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\patching_static\\patching_static.cpp",
-              "RelativeToolTip": "patching_static\\patching_static.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-13T20:54:47.524Z",
-              "EditorCaption": ""
+              "DocumentIndex": 18,
+              "Title": "MinHook.h",
+              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\minhook\\include\\MinHook.h",
+              "RelativeDocumentMoniker": "dependencies\\minhook\\include\\MinHook.h",
+              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\minhook\\include\\MinHook.h",
+              "RelativeToolTip": "dependencies\\minhook\\include\\MinHook.h",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAMwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-15T19:42:41.959Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "minwindef.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\minwindef.h",
               "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\minwindef.h",
@@ -284,29 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "libloaderapi.h",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\libloaderapi.h",
-              "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\libloaderapi.h",
-              "ViewState": "AgIAAPQAAAAAAAAAAAAMwPYAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-15T19:48:56.599Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "setup.cpp",
-              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\setup.cpp",
-              "RelativeDocumentMoniker": "fuzzbuck\\betawatch_hooker\\betawatch\\setup.cpp",
-              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\fuzzbuck\\betawatch_hooker\\betawatch\\setup.cpp",
-              "RelativeToolTip": "fuzzbuck\\betawatch_hooker\\betawatch\\setup.cpp",
-              "ViewState": "AgIAADsAAAAAAAAAAAAMwEcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-14T06:45:47.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "CsIns.hpp",
               "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\cccapstone\\cppbindings\\CsIns.hpp",
               "RelativeDocumentMoniker": "dependencies\\cccapstone\\cppbindings\\CsIns.hpp",
@@ -318,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "X86Disasm.hh",
               "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\cccapstone\\cppbindings\\X86Disasm.hh",
               "RelativeDocumentMoniker": "dependencies\\cccapstone\\cppbindings\\X86Disasm.hh",
@@ -330,19 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "insn.cpp",
-              "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\patching_static\\insn.cpp",
-              "RelativeDocumentMoniker": "patching_static\\insn.cpp",
-              "ToolTip": "D:\\0projects\\plasma-essentials\\Solution1\\patching_static\\insn.cpp",
-              "RelativeToolTip": "patching_static\\insn.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-14T08:23:02.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "capstone.h",
               "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\cccapstone\\capstone\\include\\capstone.h",
               "RelativeDocumentMoniker": "dependencies\\cccapstone\\capstone\\include\\capstone.h",
@@ -354,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "cs_priv.h",
               "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\cccapstone\\capstone\\cs_priv.h",
               "RelativeDocumentMoniker": "dependencies\\cccapstone\\capstone\\cs_priv.h",
@@ -366,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "Disasm.hpp",
               "DocumentMoniker": "D:\\0projects\\plasma-essentials\\Solution1\\dependencies\\cccapstone\\cppbindings\\Disasm.hpp",
               "RelativeDocumentMoniker": "dependencies\\cccapstone\\cppbindings\\Disasm.hpp",
