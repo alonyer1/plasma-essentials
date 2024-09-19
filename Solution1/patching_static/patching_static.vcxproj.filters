@@ -13,10 +13,51 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Capstone CPP bindings">
+      <UniqueIdentifier>{f07c8fac-dbac-402e-ba97-e70077ec16ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="patching_static.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DecodeUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\ArmDisasm.hh">
+      <Filter>Capstone CPP bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\CsCapstoneHelper.hh">
+      <Filter>Capstone CPP bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\CsIns.hpp">
+      <Filter>Capstone CPP bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\Disasm.hpp">
+      <Filter>Capstone CPP bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\MipsDisasm.hh">
+      <Filter>Capstone CPP bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\PPCDisasm.hh">
+      <Filter>Capstone CPP bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\SparcDisasm.hh">
+      <Filter>Capstone CPP bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\SystemZDisasm.hh">
+      <Filter>Capstone CPP bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\X86Disasm.hh">
+      <Filter>Capstone CPP bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\XCoreDisasm.hh">
+      <Filter>Capstone CPP bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="DecodeUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

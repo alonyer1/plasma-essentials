@@ -128,10 +128,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="HookUtils.cpp" />
     <ClCompile Include="TLS_hooks.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="definitions.h" />
+    <ClInclude Include="HookUtils.h" />
     <ClInclude Include="TLS_hooks.h" />
     <ClInclude Include="ida-defs.h" />
   </ItemGroup>

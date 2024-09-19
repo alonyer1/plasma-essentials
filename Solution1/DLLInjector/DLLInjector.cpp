@@ -3,13 +3,12 @@
 #include <tlhelp32.h>
 #include <Shlwapi.h>
 
-LPSTR DLL_PATH;
 //#define DLL_PATH "ColorDll.dll"
 #define true 1
 #define false 0
 
 
-BOOL dllInjector(const char* dllpath, DWORD pID);
+BOOL dllInjector(LPCSTR dllpath, DWORD pID);
 
 
 int main(int argc, char** argv)
@@ -28,7 +27,7 @@ int main(int argc, char** argv)
     }
 
     LPCSTR lpCmdLine = (LPCSTR)argv[1];
-    DLL_PATH = (LPSTR)argv[2];
+    LPCSTR dll_path = (LPCSTR)argv[2];
 
     printf("opening process %s\n", lpCmdLine);
     if (CreateProcessA(lpCmdLine, NULL, NULL, NULL, NULL, CREATE_SUSPENDED, NULL, NULL, &Startup, &pi) == FALSE) {
@@ -36,7 +35,7 @@ int main(int argc, char** argv)
         return 1;
     }
 
-    if (!(dllInjector(DLL_PATH, pi.dwProcessId))) {
+    if (!(dllInjector(dll_path, pi.dwProcessId))) {
         printf("couldnt inject dll");
         return 1;
     }
@@ -47,7 +46,7 @@ int main(int argc, char** argv)
     return 0;
 }
 
-BOOL dllInjector(const char* dllpath, DWORD pID)
+BOOL dllInjector(LPCSTR dllpath, DWORD pID)
 {
     HANDLE pHandle;
     LPVOID remoteString;
@@ -59,12 +58,23 @@ BOOL dllInjector(const char* dllpath, DWORD pID)
         printf("couldnt open proccess with perms\n");
         return false;
     }
+    HMODULE pKernel32 = GetModuleHandle(L"kernel32.dll");
+    if (!pKernel32) {
+        MessageBoxA(NULL, "Failed to find kernel32.dll!", "PlasmaWatch", MB_ICONINFORMATION);
+        exit(1);
+    }
 
-
-    remoteLoadLib = (LPVOID)GetProcAddress(GetModuleHandle(L"kernel32.dll"), "LoadLibraryW");
-
-    remoteString = (LPVOID)VirtualAllocEx(pHandle, NULL, strlen(DLL_PATH) + 1, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
-    WriteProcessMemory(pHandle, (LPVOID)remoteString, dllpath, strlen(dllpath), NULL);
+    remoteLoadLib = (LPVOID)GetProcAddress(pKernel32, "LoadLibraryA");
+    if (remoteLoadLib == NULL) {
+        MessageBoxA(NULL, "Failed to load executable!", "PlasmaWatch", MB_ICONINFORMATION);
+        exit(1);
+    }
+    remoteString = (LPVOID)VirtualAllocEx(pHandle, NULL, strlen(dllpath) + 1, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
+    if (remoteString == NULL) {
+        MessageBoxA(NULL, "Failed to allocate memory for DLL!", "PlasmaWatch", MB_ICONINFORMATION);
+        exit(1);
+    }
+    WriteProcessMemory(pHandle, remoteString, dllpath, strlen(dllpath), NULL);
     if (NULL == CreateRemoteThread(pHandle, NULL, NULL, (LPTHREAD_START_ROUTINE)remoteLoadLib, (LPVOID)remoteString, NULL, NULL)) {
         return false;
     }

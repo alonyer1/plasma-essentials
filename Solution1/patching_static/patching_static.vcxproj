@@ -109,7 +109,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)dependencies\minhook\build\VC17\lib\$(Configuration)\libMinHook.$(Platform).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)dependencies\minhook\build\VC17\lib\$(Configuration)\libMinHook.$(Platform).lib;$(SolutionDir)dependencies\cccapstone\capstone\msvc\$(Platform)\$(Configuration)\capstone.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)dependencies\cccapstone\capstone\msvc\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -130,7 +131,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DecodeUtils.cpp" />
     <ClCompile Include="patching_static.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\ArmDisasm.hh" />
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\CsCapstoneHelper.hh" />
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\CsIns.hpp" />
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\Disasm.hpp" />
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\MipsDisasm.hh" />
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\PPCDisasm.hh" />
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\SparcDisasm.hh" />
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\SystemZDisasm.hh" />
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\X86Disasm.hh" />
+    <ClInclude Include="..\dependencies\cccapstone\cppbindings\XCoreDisasm.hh" />
+    <ClInclude Include="DecodeUtils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

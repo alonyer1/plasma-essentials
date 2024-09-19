@@ -10,6 +10,8 @@ long long shellcode = 0x0000000141381710;
 void fix_imports(uintptr_t alloc_base);
 void new_tls0()
 {
+    printf("Called tls_callback0");
+    //MessageBoxA(NULL, "TLS_Callback0 started.", "PlasmaWatch", MB_ICONINFORMATION);
     if (isAntiCheatInitialized)
         return;
     isAntiCheatInitialized = 1;

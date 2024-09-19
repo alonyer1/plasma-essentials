@@ -1,0 +1,7 @@
+#pragma once
+#include "X86Disasm.hh"
+#include "Windows.h"
+typedef CX86InsClass _insn;
+namespace Utils {
+	_insn DecodeInsn(LPVOID address);
+}
