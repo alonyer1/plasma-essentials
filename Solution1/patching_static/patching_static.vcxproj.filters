@@ -59,5 +59,11 @@
     <ClInclude Include="DecodeUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DecodeTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test\test1.S" />
   </ItemGroup>
 </Project>

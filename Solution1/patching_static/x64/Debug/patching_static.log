@@ -1,2 +1,3 @@
 ﻿  patching_static.cpp
+D:\0projects\plasma-essentials\Solution1\patching_static\patching_static.cpp(52,12): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'cs_detail *const *'
   patching_static.vcxproj -> D:\0projects\plasma-essentials\Solution1\x64\Debug\patching_static.exe

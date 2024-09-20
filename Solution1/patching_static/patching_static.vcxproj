@@ -146,6 +146,10 @@
     <ClInclude Include="..\dependencies\cccapstone\cppbindings\X86Disasm.hh" />
     <ClInclude Include="..\dependencies\cccapstone\cppbindings\XCoreDisasm.hh" />
     <ClInclude Include="DecodeUtils.h" />
+    <ClInclude Include="DecodeTypes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test\test1.S" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

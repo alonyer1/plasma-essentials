@@ -19,4 +19,47 @@ D:\0projects\plasma-essentials\Solution1\Hooking\ida-defs.h(117,9): warning C400
       C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(205,9):
       see previous definition of 'HIWORD'
   
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(590,12): warning C4477: 'printf' : format string '%llX' requires an argument of type 'unsigned __int64', but variadic argument 2 has type 'PVOID'
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(565,22): warning C4101: 'v35': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(554,13): warning C4101: 'VirtualAddress': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(551,14): warning C4101: 'v21': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(561,15): warning C4101: 'v31': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(553,23): warning C4101: 'v23': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(549,13): warning C4101: 'v19': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(559,22): warning C4101: 'v29': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(557,9): warning C4101: 'v27': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(544,13): warning C4101: 'result': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(562,13): warning C4101: 'v32': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(577,15): warning C4101: 'v47': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(556,15): warning C4101: 'v26': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(540,23): warning C4101: 'v7': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(568,11): warning C4101: 'v38': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(548,13): warning C4101: 'v18': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(579,18): warning C4101: 'v49': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(578,13): warning C4101: 'v48': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(570,13): warning C4101: 'v40': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(552,13): warning C4101: 'v22': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(547,22): warning C4101: 'v17': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(541,18): warning C4101: 'v8': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(580,9): warning C4101: 'v50': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(571,13): warning C4101: 'v41': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(560,13): warning C4101: 'v30': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(550,13): warning C4101: 'v20': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(539,23): warning C4101: 'v6': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(564,13): warning C4101: 'v34': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(546,11): warning C4101: 'i': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(545,9): warning C4101: 'v15': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(576,13): warning C4101: 'v46': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(575,22): warning C4101: 'v45': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(563,13): warning C4101: 'v33': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(581,13): warning C4101: 'v51': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(555,13): warning C4101: 'v25': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(573,9): warning C4101: 'v43': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(574,15): warning C4101: 'v44': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(572,15): warning C4101: 'v42': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(569,15): warning C4101: 'v39': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(566,21): warning C4101: 'v36': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(558,15): warning C4101: 'v28': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(542,27): warning C4101: 'Ldr': unreferenced local variable
+D:\0projects\plasma-essentials\Solution1\Hooking\TLS_hooks.cpp(538,13): warning C4101: 'v5': unreferenced local variable
   Hooking.vcxproj -> D:\0projects\plasma-essentials\Solution1\x64\Debug\hooks.lib

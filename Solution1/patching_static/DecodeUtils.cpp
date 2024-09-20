@@ -1,0 +1,114 @@
+#include "DecodeUtils.h"
+#include <string>
+#include <fstream>
+
+
+#define MAX_TEXT_SECTIONS 2
+CX86Disasm64 decoder;
+_insn Utils::decodeInsn(LPVOID address) {
+
+	_insn insn(csh, cs_insn());
+	CS_INSN_HOLDER<_insn>* holder = decoder.Disasm(address, 20, 0);
+	return holder->Instructions(0);
+}
+
+_insn Utils::NextInstruction(_insn inst)
+{
+	CS_INSN_HOLDER<_insn>* holder = decoder.Disasm((void*)(inst->address + inst->size), 20, 0);
+	return holder->Instructions(0);
+}
+
+bool Utils::IsInsn(LPVOID address)
+{
+	CS_INSN_HOLDER<_insn>* holder = decoder.Disasm(address, 20, 0);
+	return holder->Count;
+}
+bool Utils::HasNext(_insn insn)
+{
+	CS_INSN_HOLDER<_insn>* holder = decoder.Disasm((void*)(insn->address + insn->size), 20, 0);
+	return holder->Count > 0;
+}
+x86_reg Utils::to64Bit(x86_reg reg)
+{
+	int dictionary[] = { X86_REG_INVALID,
+		X86_REG_RAX, X86_REG_RAX, X86_REG_RAX, X86_REG_BH, X86_REG_BL,
+		X86_REG_RBP, X86_REG_RBP, X86_REG_RBX, X86_REG_RCX, X86_REG_RCX,
+		X86_REG_CS, X86_REG_RCX, X86_REG_RDX, X86_REG_RDI, X86_REG_RDI,
+		X86_REG_RDX, X86_REG_DS, X86_REG_RDX, X86_REG_RAX, X86_REG_RBP,
+		X86_REG_RBX, X86_REG_RCX, X86_REG_RDI, X86_REG_RDX, X86_REG_EFLAGS,
+		X86_REG_RIP, X86_REG_RIZ, X86_REG_ES, X86_REG_RSI, X86_REG_RSP,
+	};
+	if (reg <= 30) return (x86_reg)dictionary[reg];
+	else return reg;
+}
+
+bool Utils::tryDeobfuscate(_insn insn)
+{
+	DWORD_PTR current_addr = insn->address;
+	if (std::string(insn->mnemonic) == "push") {
+		if (!HasNext(insn)) return false;
+		_insn calc = NextInstruction(insn);
+		if (!HasNext(calc)) return false;
+		auto pop = NextInstruction(calc);
+		if (std::string(calc->mnemonic) == "xor" ||
+			std::string(calc->mnemonic) == "add" ||
+			std::string(calc->mnemonic) == "and" ||
+			std::string(calc->mnemonic) == "or" ||
+			std::string(calc->mnemonic) == "sub") {
+			if (std::string(pop->mnemonic) != "pop")
+				return false;
+			if (calc->detail->x86.operands[0].type != X86_OP_REG)
+				return false;
+			if (insn->detail->x86.operands[0].reg != to64Bit(calc->detail->x86.operands[0].reg) || insn->detail->x86.operands[0].reg != pop->detail->x86.operands[0].reg)
+				return false;
+			if (!HasNext(pop)) return false;
+			_insn jmp = NextInstruction(pop);
+			if (std::string(jmp->mnemonic) != "jno" && std::string(jmp->mnemonic) != "jnb" && std::string(jmp->mnemonic) != "jae")
+				return false;
+			if (jmp->detail->x86.operands[0].imm != jmp->address + jmp->size + 2)
+				return false;
+			memset((current_addr), 0x90, jmp->detail->x86.operands[0].imm - current_addr);
+			//printf("Found at %x\n", current_addr);
+			//printf("Patch %p size %x\n", current_addr, jmp->detail->x86.operands[0].imm - current_addr);
+			return true;
+		}
+	}
+	return false;
+}
+
+void Utils::staticDeobfuscate(char* filename)
+{
+	IMAGE_DOS_HEADER dosHeader;
+	IMAGE_NT_HEADERS ntHeaders;
+	std::streampos orig_address;
+	char buffer[70];
+	std::fstream file = std::fstream(filename, std::ios::in | std::ios::binary | std::ios::out);
+	file.seekg(0);
+	file.read((char*)&dosHeader, sizeof(IMAGE_DOS_HEADER));
+	file.seekg(dosHeader.e_lfanew);
+	file.read((char*)&ntHeaders, sizeof(IMAGE_NT_HEADERS));
+	PIMAGE_SECTION_HEADER pSectionHeader = IMAGE_FIRST_SECTION(&ntHeaders);
+
+	IMAGE_SECTION_HEADER textSections[MAX_TEXT_SECTIONS];
+	int cur = 0;
+	for (int i = 0; i < ntHeaders.FileHeader.NumberOfSections &&
+		cur < MAX_TEXT_SECTIONS; i++) {
+		if (strncmp((char*)pSectionHeader[i].Name, ".text", 5) == 0) {
+			file.seekg(pSectionHeader[i].PointerToRawData);
+			file.read((char*)&textSections[cur], sizeof(IMAGE_SECTION_HEADER));
+			cur++;
+		}
+	}
+	int number_of_sections = cur;
+	for (int i = 0; i < number_of_sections; i++) {
+		orig_address = file.tellg();
+		memset(buffer, 0, 70);
+		file.read(buffer, 70);
+		bool patched = false;
+		_insn insn = decodeInsn(buffer);
+		if (tryDeobfuscate(insn)) {
+			file.seekg(orig_address);
+			file.write(buffer, strlen(buffer));
+		}
+	}
+}

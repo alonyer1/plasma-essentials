@@ -137,9 +137,6 @@
     <ClInclude Include="TLS_hooks.h" />
     <ClInclude Include="ida-defs.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="temp.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

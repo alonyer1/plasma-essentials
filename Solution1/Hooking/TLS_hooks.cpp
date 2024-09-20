@@ -3,36 +3,43 @@
 #include "stdio.h"
 #include <stdint.h>
 #include "ida-defs.h"
+#include "psapi.h"
+#include <winternl.h>
+
 
 int isAntiCheatInitialized = 0;
 long long end_shellcode = 0x0000000141381840;
 long long shellcode = 0x0000000141381710;
 void fix_imports(uintptr_t alloc_base);
+__int64 __fastcall VEH_DecryptHandler(_EXCEPTION_POINTERS* a1);
+
 void new_tls0()
 {
-    printf("Called tls_callback0");
-    //MessageBoxA(NULL, "TLS_Callback0 started.", "PlasmaWatch", MB_ICONINFORMATION);
+    printf("Called tls_callback0\n");
+
+    //This part will make the TLS_callback run only once.
     if (isAntiCheatInitialized)
         return;
     isAntiCheatInitialized = 1;
-    uintptr_t hModule = 0x0000000140000000;
-
+    //PEB hModule = *NtCurrentTeb()->ProcessEnvironmentBlock;
     auto kernel32 = GetModuleHandleA("kernel32.dll");
-    //auto v35 = CreateFileW()
-    auto v35 = CreateFileW(L"C:\\Users\\a\\Downloads\\overwatch-beta-0-8-0-24919\\Overwatch Beta 0.8.0.24919\\GameClientApp.exe", 0x80000000, 1u, 0i64, 3u, 0, 0i64);
+    char path[MAX_PATH*2]; //File path
+    GetModuleFileName(NULL, (LPTSTR)path, MAX_PATH); //Get the file name
+    auto v35 = CreateFileW((LPTSTR)path, 0x80000000, 1u, 0i64, 3u, 0, 0i64);
+    HMODULE hModule = GetModuleHandle((LPTSTR)path); // The image base? Is this really supposed to be hardcoded? -Soup
     auto v54 = GetFileSize(v35, 0);
     auto v73 = VirtualAlloc(0i64, v54, 0x3000i64, 4i64);
     //v92 is ReadFile
     DWORD out_size;
     if (!ReadFile(v35, v73, v54, &out_size, 0) || out_size != v54)
     {
+        printf("File not found!\n");
         CloseHandle(v35);
         return;
     }
     CloseHandle(v35);
-
-    auto dos = (IMAGE_DOS_HEADER*)(hModule);
-    auto nt = (IMAGE_NT_HEADERS*)(hModule + dos->e_lfanew);
+    PIMAGE_DOS_HEADER dos = (PIMAGE_DOS_HEADER)(hModule);
+    auto nt = (PIMAGE_NT_HEADERS)((char*)hModule + dos->e_lfanew); //This one causes problems for some reason.
     if (nt->Signature != 0x4550)
     {
         printf("Wrong signature\n");
@@ -108,7 +115,7 @@ void new_tls0()
     *(uint64_t**)(0x14181D478) = v117;
     uintptr_t alloc_base = v117[2];
     fix_imports(alloc_base);
-    //AddVectoredExceptionHandler(1, (PVECTORED_EXCEPTION_HANDLER)veh::decrypt::VEH_DecryptHandler);
+    AddVectoredExceptionHandler(1, (PVECTORED_EXCEPTION_HANDLER) (& VEH_DecryptHandler));
 }
 
 void fix_imports(uintptr_t alloc_base)
@@ -521,4 +528,80 @@ void fix_imports(uintptr_t alloc_base)
     *(uint64_t*)(alloc_base + 0x1382A90) = (uint64_t)GetProcAddress(LoadLibraryA("WINHTTP.dll"), "WinHttpOpen");
     *(uint64_t*)(alloc_base + 0x1382A98) = (uint64_t)GetProcAddress(LoadLibraryA("WINHTTP.dll"), "WinHttpCloseHandle");
     *(uint64_t*)(alloc_base + 0x1382AA0) = (uint64_t)GetProcAddress(LoadLibraryA("WINHTTP.dll"), "WinHttpGetIEProxyConfigForCurrentUser");
+}
+
+__int64 __fastcall VEH_DecryptHandler(_EXCEPTION_POINTERS* a1)
+{
+    PEXCEPTION_RECORD ExceptionRecord; // rcx
+    unsigned __int64 v3; // r15
+    unsigned int v4; // edi
+    __int64 v5; // rbp
+    IMAGE_DOS_HEADER* v6; // rdx
+    IMAGE_NT_HEADERS* v7; // r10
+    struct _PEB* v8; // r9
+    struct _PEB_LDR_DATA* Ldr; // r9
+
+    __int64 result; // rax
+    int v15; // edx
+    BYTE* i; // rcx
+    unsigned __int64 v17; // rbx
+    __int64 v18; // rdx
+    __int64 v19; // r14
+    __int64 v20; // r12
+    __int64* v21; // rcx
+    __int64 v22; // rdi
+    IMAGE_NT_HEADERS* v23; // rdx
+    __int64 VirtualAddress; // rax
+    __int64 v25; // r8
+    uint32_t* v26; // r11
+    int v27; // eax
+    uint16_t* v28; // r9
+    unsigned __int64 v29; // rax
+    __int64 v30; // r10
+    uint16_t* v31; // rdx
+    __int64 v32; // rdx
+    __int64 v33; // r10
+    __int64 v34; // r8
+    unsigned __int64 v35; // r9
+    unsigned __int8 v36; // al
+    char* v37; // rax
+    void* v38; // rbx
+    uint32_t* v39; // rcx
+    __int64 v40; // rax
+    __int64 v41; // r8
+    uint32_t* v42; // r10
+    int v43; // eax
+    uint16_t* v44; // r9
+    unsigned __int64 v45; // rax
+    __int64 v46; // r11
+    uint16_t* v47; // rdx
+    __int64 v48; // rbx
+    unsigned int v49; // edx
+    int v50; // eax
+    __int64 v51; // rcx
+    int v52; // [rsp+70h] [rbp+18h] BYREF
+
+    printf("HIIII\n");
+    auto qword_14181D478 = *(uint64_t**)0x14181D478;
+    v37 = (char*)(*((uint64_t**)0x14181D478));
+    ExceptionRecord = a1->ExceptionRecord;
+    v3 = ExceptionRecord->ExceptionInformation[1] & 0xFFFFFFFFFFFFF000ui64;
+    v4 = (ExceptionRecord->ExceptionInformation[1] & 0xFFFFF000) - *((uint32_t*)qword_14181D478 + 2);
+    printf("[EXC] Code %X Addr %llX\n", ExceptionRecord->ExceptionCode, ExceptionRecord->ExceptionAddress);
+    Sleep(1000);
+    /*         if (ExceptionRecord->ExceptionCode == STATUS_SINGLE_STEP)
+                 return -1;*/
+    if (ExceptionRecord->ExceptionCode == STATUS_BREAKPOINT)
+    {
+        __debugbreak();
+        //printf("Return addr %llX\n", __builtin_return_address(0));
+
+        Sleep(1000);
+        return 0;
+    }
+    if (ExceptionRecord->ExceptionCode != 0xC0000005)
+        return 0;
+
+    ((void(__fastcall*)(unsigned __int64, __int64, __int64, int*))(v37+80))(v3, 0x1000i64, 0x20i64, &v52);
+    return -1;
 }
