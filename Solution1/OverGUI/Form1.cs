@@ -74,6 +74,44 @@ namespace OverGUI
                 OptionalArguments.Text = arguments;
             }
         }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog overwatch = new OpenFileDialog();
+            overwatch.InitialDirectory = System.AppDomain.CurrentDomain.BaseDirectory;
+            overwatch.DefaultExt = @".exe";
+            overwatch.Filter = @"Windows Executable|*.exe";
+            overwatch.Title = "Browse for executable to deobfuscate";
+            overwatch.ShowDialog();
+            if (overwatch.FileName != string.Empty)
+            {
+                try
+                {
+                    ProcessStartInfo processInfo = new ProcessStartInfo();
+                    processInfo.FileName = @"patching_static.exe";
+                    processInfo.UseShellExecute = true;
+                    processInfo.RedirectStandardOutput = false;
+                    processInfo.RedirectStandardError = false;
+                    processInfo.CreateNoWindow = false;
+                    processInfo.Arguments = OptionalArguments.Text;
+                    using (Process process = Process.Start(processInfo))
+                    {
+                        // Capture the output
+                        //string output = process.StandardOutput.ReadToEnd();
+                        //string error = process.StandardError.ReadToEnd();
+
+                        // Display the output in a TextBox or other control
+                        //textBox1.Text += output + "\n" + error;
+
+                        process.WaitForExit();
+                        textBox1.AppendText("Done! \n");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("The operation was canceled or failed: " + ex.Message);
+                }
+            }
+        }
         private void changeToWhite(object sender, EventArgs e)
         {
             Button button = sender as Button;

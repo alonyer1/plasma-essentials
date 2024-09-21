@@ -3,14 +3,25 @@
 
 
 #include "DecodeUtils.h"
-
+#include <ios>
+#include <fstream>
 int main(int argc, char* argv[])
 {
     if (argc != 2) {
         printf("Correct format: %s path/to/game.exe");
         return 1;
     }
-    int inst = 0x0000FFFF;
+    char path_no_exe[MAX_PATH] = { 0 };
+    strncpy(path_no_exe, argv[1], strlen(argv[1]) - 4);
+    printf("test %s\n", path_no_exe);
+    char dest_path[MAX_PATH];
+    sprintf(dest_path, "%s.old.exe", &path_no_exe);
+    printf("Backed up to %s\n", dest_path);
+    std::ifstream  src(argv[1], std::ios::binary | std::fstream::in);
+    std::ofstream  dst(dest_path, std::ios::binary | std::fstream::out);
+    dst << src.rdbuf();
+    dst.close();
+    src.close();
     Utils::staticDeobfuscate(argv[1]);
     return 1;
 }

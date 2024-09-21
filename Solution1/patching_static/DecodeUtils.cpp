@@ -11,12 +11,12 @@ _insn Utils::decodeInsn(LPVOID address, size_t baseAddress=0) {
 		baseAddress = (size_t)address;
 	}
 	if (address == 0) {
-		throw new std::exception("Cannot decode address!\n");
+		throw new errNotInstruction();
 	}
 
 	CS_INSN_HOLDER<_insn>* holder = decoder.Disasm(address, 20, baseAddress);
 	if (holder->Count == 0) {
-		throw new std::exception("Cannot decode address!\n");
+		throw new errNotInstruction();
 	}
 	return holder->Instructions(0);
 }
@@ -140,31 +140,25 @@ void Utils::staticDeobfuscate(const char* filename)
 		printf("Size of text section:%x\n", textSections[i].SizeOfRawData);
 		file.seekg(current_loc);
 		while (current_loc - textSections[i].PointerToRawData < textSections[i].SizeOfRawData) {
-			try {
-				orig_address = file.tellg();
-				memset(buffer, 0, 70);
-				if (!file.read(buffer, 70)) {
-					printf("Read failed!\n");
-					break;
-				}
-				if (!Utils::IsInsn(buffer)) {
-
-				}
-				_insn insn = decodeInsn(buffer, (size_t)buffer);
-				if (insn->address == 0) break;
-				//printf("%d\n", insn->detail->x86.operands[0]);
-				printf(".text::%lx %s %s\n", current_loc - textSections[i].PointerToRawData, insn->mnemonic, insn->op_str);
-				if (tryDeobfuscate(insn)) {
-					file.seekg(orig_address);
-					file.write(buffer, strlen(buffer));
-				}
-				current_loc += insn->size;
-				file.seekg(orig_address + std::streampos(insn->size));
+			orig_address = file.tellg();
+			memset(buffer, 0, 70);
+			if (!file.read(buffer, 70)) {
+				printf("Read failed!\n");
+				break;
 			}
-			catch(errNotInstruction ex){
-				printf("Reached end of code section, or invalid instruction.\n");
-
+			if (!Utils::IsInsn(buffer)) {
+				break;
 			}
+			_insn insn = decodeInsn(buffer, (size_t)buffer);
+			if (insn->address == 0) break;
+			//printf("%d\n", insn->detail->x86.operands[0]);
+			printf(".text::%lx %s %s\n", current_loc - textSections[i].PointerToRawData, insn->mnemonic, insn->op_str);
+			if (tryDeobfuscate(insn)) {
+				file.seekg(orig_address);
+				file.write(buffer, strlen(buffer));
+			}
+			current_loc += insn->size;
+			file.seekg(orig_address + std::streampos(insn->size));
 		}
 	}
 	file.close();

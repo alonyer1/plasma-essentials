@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3yNJmysVdEY=",
+  "success": true,
+  "projectFilePath": "D:\\0projects\\plasma-essentials\\Solution1\\OverGUI\\OverGUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\WORK\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.8\\microsoft.net.illink.tasks.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

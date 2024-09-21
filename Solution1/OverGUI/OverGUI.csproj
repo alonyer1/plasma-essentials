@@ -9,7 +9,7 @@
 	 <ApplicationHighDpiMode>PerMonitor</ApplicationHighDpiMode>
     <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
     <PackageIcon>ow-logo.png</PackageIcon>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <BaseOutputPath></BaseOutputPath>
     <PackageOutputPath>$(SolutionDir)</PackageOutputPath>
   </PropertyGroup>

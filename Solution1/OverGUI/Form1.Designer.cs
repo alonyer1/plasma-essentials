@@ -52,6 +52,7 @@ namespace OverGUI
             label1 = new Label();
             OptionalArguments = new TextBox();
             openFileDialog2 = new OpenFileDialog();
+            button4 = new Button();
             label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).BeginInit();
             SuspendLayout();
@@ -151,18 +152,40 @@ namespace OverGUI
             // 
             openFileDialog2.FileName = "openFileDialog2";
             // 
+            // button4
+            // 
+            button4.BackColor = Color.Transparent;
+            button4.BackgroundImageLayout = ImageLayout.Zoom;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button4.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Microsoft Sans Serif", 25F);
+            button4.Image = Properties.Resources.buttonRegular;
+            button4.ImageAlign = ContentAlignment.MiddleRight;
+            button4.Location = new Point(623, 127);
+            button4.Name = "button4";
+            button4.Size = new Size(445, 163);
+            button4.TabIndex = 0;
+            button4.Text = "    Deobfuscate";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            button4.MouseEnter += changeToWhite;
+            button4.MouseLeave += changeToYellow;
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(31, 38, 46);
             BackgroundImage = Properties.Resources.background;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1080, 1061);
+            ClientSize = new Size(1080, 941);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(OptionalArguments);
             Controls.Add(textBox1);
             Controls.Add(button3);
+            Controls.Add(button4);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -185,5 +208,6 @@ namespace OverGUI
         private Label label1;
         private TextBox OptionalArguments;
         private OpenFileDialog openFileDialog2;
+        private Button button4;
     }
 }

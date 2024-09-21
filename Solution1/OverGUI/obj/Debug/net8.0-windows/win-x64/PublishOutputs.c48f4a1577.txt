@@ -1,0 +1,2 @@
+D:\0projects\plasma-essentials\Solution1\OverGUI\x64\Debug\OverGUI.pdb
+D:\0projects\plasma-essentials\Solution1\OverGUI\x64\Debug\OverGUI.exe
