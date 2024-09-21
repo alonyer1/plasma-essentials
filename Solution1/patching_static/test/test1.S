@@ -1,7 +1,7 @@
 .intel_syntax noprefix
-.global main
-
-main:
+.global WinMain
+.text
+WinMain:
 	mov rax, 5
 	push rax
 	or eax, 0x1

@@ -1,3 +1,18 @@
-﻿  patching_static.cpp
-D:\0projects\plasma-essentials\Solution1\patching_static\patching_static.cpp(52,12): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'cs_detail *const *'
+﻿  DecodeUtils.cpp
+  patching_static.cpp
+D:\0projects\plasma-essentials\Solution1\patching_static\DecodeUtils.cpp(127,1): warning C4477: 'printf' : format string '%llx' requires an argument of type 'unsigned __int64', but variadic argument 3 has type 'DWORD'
+      D:\0projects\plasma-essentials\Solution1\patching_static\DecodeUtils.cpp(127,1):
+      consider using '%lx' in the format string
+  
+D:\0projects\plasma-essentials\Solution1\patching_static\DecodeUtils.cpp(127,1): warning C4477: 'printf' : format string '%llx' requires an argument of type 'unsigned __int64', but variadic argument 4 has type 'DWORD'
+      D:\0projects\plasma-essentials\Solution1\patching_static\DecodeUtils.cpp(127,1):
+      consider using '%lx' in the format string
+  
+D:\0projects\plasma-essentials\Solution1\patching_static\patching_static.cpp(10,16): warning C4473: 'printf' : not enough arguments passed for format string
+      D:\0projects\plasma-essentials\Solution1\patching_static\patching_static.cpp(10,16):
+      placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+      D:\0projects\plasma-essentials\Solution1\patching_static\patching_static.cpp(10,16):
+      the missing variadic argument 1 is required by format string '%s'
+  
+  Generating Code...
   patching_static.vcxproj -> D:\0projects\plasma-essentials\Solution1\x64\Debug\patching_static.exe
