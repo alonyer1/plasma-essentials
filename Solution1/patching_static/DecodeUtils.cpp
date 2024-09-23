@@ -88,9 +88,21 @@ bool Utils::tryDeobfuscate(_insn insn)
 	return false;
 }
 
+void loadingBar(DWORD previous, DWORD current, DWORD goal) {
+	int prev_progress = (10* previous)/goal;
+	int current_progress = (10*current)/goal;
+	if (prev_progress == current_progress) return;
+	printf("[");
+	for (int i = 0; i < current_progress; i++) printf("*");
+	for (int i = 0; i < 10-current_progress; i++) printf(".");
+	printf("]\n");
+}
 void Utils::staticDeobfuscate(const char* filename)
 {
-	decoder.SetDetail(CS_OPT_ON);
+	if (!decoder.SetDetail(CS_OPT_ON)) {
+		printf("Failed to initiate disassembler!\n");
+		exit(1);
+	}
 	IMAGE_DOS_HEADER dosHeader;
 	IMAGE_NT_HEADERS ntHeaders;
 	std::streampos orig_address;
@@ -130,7 +142,8 @@ void Utils::staticDeobfuscate(const char* filename)
 			cur++;
 		}
 	}
-	DWORD current_loc;
+	DWORD current_loc = 0;
+	DWORD previous_loc = 0;
 	int number_of_sections = cur;
 	printf("Note: jmp addresses will not be printed correctly, as all instructions share the same address (buffer).\n");
 	printf("Number of text sections:%d\n", cur);
@@ -147,16 +160,20 @@ void Utils::staticDeobfuscate(const char* filename)
 				break;
 			}
 			if (!Utils::IsInsn(buffer)) {
-				break;
+				//printf(".text::%lx Byte %2x", current_loc, buffer[0]);
+				previous_loc = current_loc;
+				current_loc++;
+				continue;
 			}
 			_insn insn = decodeInsn(buffer, (size_t)buffer);
 			if (insn->address == 0) break;
 			//printf("%d\n", insn->detail->x86.operands[0]);
-			printf(".text::%lx %s %s\n", current_loc - textSections[i].PointerToRawData, insn->mnemonic, insn->op_str);
+			loadingBar(previous_loc - textSections[i].PointerToRawData, current_loc - textSections[i].PointerToRawData, textSections[i].SizeOfRawData);
 			if (tryDeobfuscate(insn)) {
 				file.seekg(orig_address);
 				file.write(buffer, strlen(buffer));
 			}
+			previous_loc = current_loc;
 			current_loc += insn->size;
 			file.seekg(orig_address + std::streampos(insn->size));
 		}

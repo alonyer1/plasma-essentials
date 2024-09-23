@@ -116,6 +116,7 @@ void new_tls0()
     uintptr_t alloc_base = v117[2];
     fix_imports(alloc_base);
     AddVectoredExceptionHandler(1, (PVECTORED_EXCEPTION_HANDLER) (& VEH_DecryptHandler));
+    printf("Finished tls_callback0\n");
 }
 
 void fix_imports(uintptr_t alloc_base)
@@ -528,6 +529,11 @@ void fix_imports(uintptr_t alloc_base)
     *(uint64_t*)(alloc_base + 0x1382A90) = (uint64_t)GetProcAddress(LoadLibraryA("WINHTTP.dll"), "WinHttpOpen");
     *(uint64_t*)(alloc_base + 0x1382A98) = (uint64_t)GetProcAddress(LoadLibraryA("WINHTTP.dll"), "WinHttpCloseHandle");
     *(uint64_t*)(alloc_base + 0x1382AA0) = (uint64_t)GetProcAddress(LoadLibraryA("WINHTTP.dll"), "WinHttpGetIEProxyConfigForCurrentUser");
+}
+
+void anti_anti_debug()
+{
+    MessageBoxA(0, "Attach debugger.", "plasmawatch", MB_ICONINFORMATION);
 }
 
 __int64 __fastcall VEH_DecryptHandler(_EXCEPTION_POINTERS* a1)

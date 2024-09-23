@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OverGUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+847d5dfc4c78a5d838260c493e2dcc37525d666e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc001265b926f36b047fb7d89a89b0d6e204c9cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("OverGUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OverGUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
