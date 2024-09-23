@@ -20,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OverGUI", "OverGUI\OverGUI.csproj", "{A35AC4F0-7EAA-4290-9415-981E6FE22E23}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "betawatch", "..\..\forkbetawatch_hooker\betawatch\betawatch.vcxproj", "{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "betawatch", "dependencies\betawatch\betawatch\betawatch.vcxproj", "{07B61F26-4F3A-43C0-9A61-5E7CBFE10F0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
