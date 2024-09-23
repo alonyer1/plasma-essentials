@@ -1,0 +1,18 @@
+[submodule "Solution1/x64/Debug/Solution1/dependencies/cccapstone"]
+	path = Solution1/x64/Debug/Solution1/dependencies/cccapstone
+	url = https://github.com/zer0mem/cccapstone.git
+[submodule "Solution1/x64/Debug/Solution1/dependencies/minhook"]
+	path = Solution1/x64/Debug/Solution1/dependencies/minhook
+	url = https://github.com/TsudaKageyu/minhook.git
+[submodule "Solution1/x64/Debug/Solution1/dependencies/betwatch"]
+	path = Solution1/x64/Debug/Solution1/dependencies/betwatch
+	url = https://github.com/alonyer1/betawatch_hooker.git
+[submodule "Solution1/dependencies/cccapstone"]
+	path = Solution1/dependencies/cccapstone
+	url = https://github.com/zer0mem/cccapstone.git
+[submodule "Solution1/dependencies/betawatch"]
+	path = Solution1/dependencies/betawatch
+	url = https://github.com/alonyer1/betawatch_hooker.git
+[submodule "Solution1/dependencies/minhook"]
+	path = Solution1/dependencies/minhook
+	url = https://github.com/TsudaKageyu/minhook.git
